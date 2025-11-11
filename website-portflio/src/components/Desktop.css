@@ -9,6 +9,8 @@
     border-top-color: #ffffff;
     border-left-color: #ffffff;
     box-shadow: inset -2px -2px 0 #808080, inset 2px 2px 0 #dfdfdf;
+    display: flex;
+    flex-direction: column;
 }
 
 .desktop-icons {
@@ -16,4 +18,6 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, 90px);
     grid-gap: 20px;
+    flex: 1;
+    overflow: auto;
 }

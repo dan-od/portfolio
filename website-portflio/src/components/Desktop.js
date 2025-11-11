@@ -1,5 +1,6 @@
 import React from 'react';
 import DesktopIcon from './DesktopIcon';
+import Taskbar from './Taskbar';
 import './Desktop.css';
 
 const Desktop = ({ openWindow }) => {
@@ -25,6 +26,7 @@ const Desktop = ({ openWindow }) => {
           />
         ))}
       </div>
+      <Taskbar />
     </div>
   );
 };

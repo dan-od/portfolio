@@ -1,5 +1,5 @@
 .taskbar {
-    position: absolute;
+    position: relative;
     bottom: 0;
     left: 0;
     right: 0;
@@ -9,6 +9,7 @@
     display: flex;
     align-items: center;
     padding: 2px;
+    flex-shrink: 0;
 }
 
 .start-button {

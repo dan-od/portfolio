@@ -1,4 +1,5 @@
 import React from 'react';
+import Window from './Window';
 
 const AboutWindow = ({ onClose }) => (
   <Window title="About Me" onClose={onClose} width={400}>

@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Desktop from './components/Desktop';
-import Taskbar from './components/Taskbar';
 import AboutWindow from './components/AboutWindow';
 import ProjectsWindow from './components/ProjectsWindow';
 import ExperienceWindow from './components/ExperienceWindow';
@@ -47,7 +46,6 @@ function App() {
     <div className="app">
       <Desktop openWindow={openWindow} />
       {activeWindows.map(renderWindow)}
-      <Taskbar />
     </div>
   );
 }

@@ -1,32 +1,27 @@
 import React from 'react';
-import DesktopIcon from './DesktopIcon';
-import './Desktop.css';
+import './DesktopIcon.css';
 
-const Desktop = ({ openWindow }) => {
-  const icons = [
-    { id: 'about', label: 'About Me', icon: '👤', color: '#c0c0c0' },
-    { id: 'projects', label: 'My Projects', icon: '📁', color: '#ffff00' },
-    { id: 'experience', label: 'Experience', icon: '💼', color: '#808080' },
-    { id: 'skills', label: 'Skills', icon: '⚙️', color: '#00ff00' },
-    { id: 'contact', label: 'Contact', icon: '📧', color: '#0080ff' },
-    { id: 'github', label: 'GitHub', icon: 'GH', color: '#000', isExternal: true, url: 'https://github.com' },
-    { id: 'linkedin', label: 'LinkedIn', icon: 'in', color: '#0077b5', isExternal: true, url: 'https://linkedin.com' },
-    { id: 'speedwatch', label: 'SpeedWatch Ontario', icon: '🚗', color: '#ff0000' }
-  ];
-
+const DesktopIcon = ({ id, label, icon, color, onClick }) => {
   return (
-    <div className="desktop">
-      <div className="desktop-icons">
-        {icons.map(icon => (
-          <DesktopIcon
-            key={icon.id}
-            {...icon}
-            onClick={icon.isExternal ? () => window.open(icon.url, '_blank') : () => openWindow(icon.id)}
-          />
-        ))}
+    <div className="desktop-icon" onClick={onClick} onDoubleClick={onClick}>
+      <div 
+        style={{
+          width: '32px',
+          height: '32px',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          fontSize: '24px',
+          backgroundColor: color,
+          border: '1px solid #000',
+          marginBottom: '5px'
+        }}
+      >
+        {icon}
       </div>
+      <span>{label}</span>
     </div>
   );
 };
 
-export default Desktop;
+export default DesktopIcon;
