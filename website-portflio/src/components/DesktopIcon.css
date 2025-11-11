@@ -1,0 +1,29 @@
+.desktop-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    padding: 5px;
+    border: 1px solid transparent;
+    width: 80px;
+}
+
+.desktop-icon:hover {
+    background: rgba(0, 0, 139, 0.3);
+    border: 1px dotted #ffffff;
+}
+
+.desktop-icon img {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 5px;
+    image-rendering: pixelated;
+}
+
+.desktop-icon span {
+    color: white;
+    font-size: 11px;
+    text-align: center;
+    text-shadow: 1px 1px 1px black;
+    word-wrap: break-word;
+}

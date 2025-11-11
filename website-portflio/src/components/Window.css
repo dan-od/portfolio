@@ -1,0 +1,130 @@
+.window {
+    position: absolute;
+    background: #c0c0c0;
+    border: 2px solid;
+    border-color: #ffffff #000000 #000000 #ffffff;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    display: none;
+    z-index: 10;
+}
+
+.window.active {
+    display: block;
+}
+
+.window-header {
+    background: linear-gradient(to right, #000080, #1084d0);
+    color: white;
+    padding: 2px 4px;
+    font-size: 11px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: move;
+}
+
+.window-controls {
+    display: flex;
+    gap: 2px;
+}
+
+.window-button {
+    width: 16px;
+    height: 14px;
+    background: #c0c0c0;
+    border: 2px solid;
+    border-color: #ffffff #000000 #000000 #ffffff;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.window-button:active {
+    border-color: #000000 #ffffff #ffffff #000000;
+}
+
+.window-content {
+    padding: 10px;
+    background: white;
+    min-height: 200px;
+    max-height: 400px;
+    overflow-y: auto;
+    font-size: 12px;
+    color: #000;
+}
+
+.window-content h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #808080;
+    padding-bottom: 5px;
+}
+
+.window-content p {
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.skill-badge {
+    background: #e0e0e0;
+    border: 1px solid #808080;
+    padding: 5px;
+    text-align: center;
+    font-size: 10px;
+}
+
+.project-card {
+    background: #f0f0f0;
+    border: 1px solid #808080;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.project-card h3 {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.link-button {
+    display: inline-block;
+    padding: 2px 8px;
+    background: #c0c0c0;
+    border: 2px solid;
+    border-color: #ffffff #808080 #808080 #ffffff;
+    text-decoration: none;
+    color: #000;
+    font-size: 11px;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+.link-button:active {
+    border-color: #808080 #ffffff #ffffff #808080;
+}
+
+/* Scrollbar styling for Windows 95 feel */
+.window-content::-webkit-scrollbar {
+    width: 16px;
+}
+
+.window-content::-webkit-scrollbar-track {
+    background: #c0c0c0;
+    border: 1px solid #808080;
+}
+
+.window-content::-webkit-scrollbar-thumb {
+    background: #c0c0c0;
+    border: 2px solid;
+    border-color: #ffffff #808080 #808080 #ffffff;
+}

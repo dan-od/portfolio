@@ -1,0 +1,49 @@
+.taskbar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 28px;
+    background: #c0c0c0;
+    border-top: 2px solid #ffffff;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+}
+
+.start-button {
+    height: 22px;
+    padding: 0 8px;
+    background: #c0c0c0;
+    border: 2px solid;
+    border-color: #ffffff #808080 #808080 #ffffff;
+    font-size: 11px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.start-button:active {
+    border-color: #808080 #ffffff #ffffff #808080;
+}
+
+.start-button::before {
+    content: '';
+    width: 16px;
+    height: 14px;
+    margin-right: 3px;
+    background: linear-gradient(to right, #ff0000 25%, #ffff00 25%, #ffff00 50%, #00ff00 50%, #00ff00 75%, #0000ff 75%);
+}
+
+.clock {
+    margin-left: auto;
+    padding: 0 10px;
+    font-size: 11px;
+    border: 1px inset #ffffff;
+    background: #c0c0c0;
+    height: 22px;
+    display: flex;
+    align-items: center;
+}
